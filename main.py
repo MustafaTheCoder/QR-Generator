@@ -2,7 +2,8 @@
 import qrcode
 import cv2
 
-img = qrcode.make("https://www.youtube.com/")
+user_inp = input("Enter Website URL: ")
+img = qrcode.make(user_inp)
 img.save("youtubeQR.jpg")
 
 # Decoding QR Code
